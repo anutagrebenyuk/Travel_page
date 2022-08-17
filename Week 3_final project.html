@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Normandie</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(177, 173, 219) 10%,
+          rgb(245, 226, 226) 90%
+        );
+      }
+      h1,
+      h2 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 50px;
+      }
+      h1 {
+        text-align: center;
+        margin: 10px auto;
+        padding: 30px 0px 10px 0px;
+        color: #543a58;
+        font-weight: bolder;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        background: #63547d;
+        opacity: 0.9;
+        line-height: 1.5;
+        padding: 10px 0px;
+        border-radius: 10px;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        border-radius: 10px;
+      }
+      p {
+        text-align: justify;
+        margin: 10px 10px 0px 0px;
+        line-height: 1.2;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 20px 50px;
+        border: 2px solid #63547d;
+        border-radius: 20px;
+        background: #63547d;
+        box-shadow: 7px 7px 7px rgba(187, 179, 179, 0.982);
+        color: white;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #eedde2;
+        color: #63547d;
+        border: 2px solid #63547d;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+        padding: 10px 0px;
+        text-align: center;
+      }
+
+      li {
+        margin: 15px;
+        padding: 0px 0px 20px 0px;
+        display: inline;
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .links {
+        font-family: monospace;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+      }
+
+      .fullPage {
+        display: block;
+        margin: 0px auto;
+        max-width: 800px;
+      }
+      .footer {
+        text-align: center;
+        font-family: monospace;
+        font-size: 11px;
+        color: grey;
+        padding: 0px 0px 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullPage">
+      <h1>
+        <em>LE MONT-SAINT-MICHEL</em>
+      </h1>
+      <hr />
+      <h2><em>Unforgettable Normandie</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/351/original/8118-Mont-Saint-Michel-couleur-dautomne-%C2%A9-DaLiu-Shutterstock.com-%C2%A9-DaLiu-Shutterstock.com_.jpg?1654428420"
+        );
+        alt="Mont-Saint-Michel"
+      />
+      <p>
+        Normandy is one most historically significant areas of France, so why
+        not make the best of your time there? Mont Saint Michel is one of the
+        most visited destinations for its idyllic beauty and historic charm.
+        Truly a gem of Normandy, the island abbey welcomes around 2.5 million
+        guests per year.
+      </p>
+      <br />
+      <p>
+        Arguably one of the most important thing when visiting Mont Saint Michel
+        is caution. When the tide is gone, the surrounding area offers
+        unbeatable views of the island. But the waves are extremely
+        unpredictable and can change in an instant. While the tides are
+        constantly fluctuating, this will at least give you an idea of what to
+        expect. Because of the surrounding shallow bay, Mont Sant Michel
+        actually only becomes an island at a very high tide. If you want to
+        visit during a high tide, it is best to
+        <a href="https://www.ot-montsaintmichel.com/marees/" target="blank">
+          <span class="links"> check here ❗</span></a
+        >
+      </p>
+
+      <ul>
+        <span class="links">
+          <li>
+            <a
+              href="https://simple.wikipedia.org/wiki/Mont-Saint-Michel"
+              target="blank"
+            >
+              📖 More info in Wikipedia
+            </a>
+          </li>
+        </span>
+        <span class="links">
+          <li>
+            <a
+              href="https://www.france-justforyou.com/blog/the-legends-of-mont-saint-michel"
+              target="blank"
+              >📜 Legends of Mont-Saint-Michel</a
+            >
+          </li>
+        </span>
+      </ul>
+
+      <button><strong>BOOK TOUR</strong></button>
+      <p class="footer">This page was created by Hanna Hrebeniuk</p>
+    </div>
+    <script>
+      function bookTour() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your e-mail?");
+
+        if (name !== "" && email !== "") {
+          alert(
+            "Thank you " +
+              name +
+              "! " +
+              "Check your e-mail, you will receive the travel tour options soon 🤝."
+          );
+        } else {
+          alert("🤔 Sorry, we cannot provide book options to you.");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", bookTour);
+    </script>
+  </body>
+</html>
